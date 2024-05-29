@@ -175,8 +175,7 @@ public class ModelFactoryModel {
 		modelFactoryAbstracta = loadAbstractaModel();// el modelo destino
 		modelFactoryAbstracta.getProjects().clear();
 		
-		//loadPrimitivesTypesWc(modelFactoryConcreta, modelFactoryAbstracta);
-		
+		//loadPrimitivesTypesWc(modelFactoryConcreta, modelFactoryAbstracta);		
 		//Bloque que permite cargar los tipos de datos de mi lenguaje
 		if (modelFactoryConcreta.getTypeFactoryWc().getType().size() != 0) {
 			abstracta.DataTypeFactoryWc dataTypeFaAbs = AbstractaFactory.eINSTANCE.createDataTypeFactoryWc();
@@ -189,8 +188,6 @@ public class ModelFactoryModel {
 			modelFactoryAbstracta.setTypeFactoryWc(dataTypeFaAbs);
 		}
 
-		
-
 		for (ProjectWc projectWcConcreta : modelFactoryConcreta.getProjects()) {
 
 			// por un proyecto de la concreta se crea uno en la abstracta
@@ -198,8 +195,7 @@ public class ModelFactoryModel {
 			proyectoWcAbstracta.setName(projectWcConcreta.getName());
 			proyectoWcAbstracta.setPath(projectWcConcreta.getPath());
 			modelFactoryAbstracta.getProjects().add(proyectoWcAbstracta);
-			
-			
+						
 //			cada proyecto tiene un paquete raíz, cuyo path es ""
 			abstracta.PackageWc packageRaizWc = AbstractaFactory.eINSTANCE.createPackageWc();
 			packageRaizWc.setName(projectWcConcreta.getName());
@@ -216,9 +212,9 @@ public class ModelFactoryModel {
 					crearClass(packageRaizWc, classWcConcreta);
 				}
 				
-//				for (RelationWc relationWc : diagrama.getRelationship()) {
-//					crearRelacion(relationWc, packageRaizWc);
-//				}
+				for (RelationWc relationWc : diagrama.getRelationship()) {
+					crearRelacion(relationWc, packageRaizWc);
+				}
 			}
 			
 			
@@ -337,6 +333,8 @@ public class ModelFactoryModel {
         relationWcAbstractaSource.setMultA(relationWcConcreta.getMultA());
         relationWcAbstractaSource.setMultB(relationWcConcreta.getMultB());
         classWcAbstractaSource.getListRelationshipOut().add(relationWcAbstractaSource);
+        
+		packageRaizWc.getRelationship().add(relationWcAbstractaSource);
 		
         relationWcAbstractaSource.setSource(classWcAbstractaTarget);
         relationWcAbstractaSource.setTarget(classWcAbstractaSource);
@@ -345,7 +343,7 @@ public class ModelFactoryModel {
         relationWcAbstractaSource.setMultA(relationWcConcreta.getMultB());
         relationWcAbstractaSource.setMultB(relationWcConcreta.getMultA());
 		classWcAbstractaTarget.getListRelationshipOut().add(relationWcAbstractaSource);
-		packageRaizWc.getRelationship().add(relationWcAbstractaSource);
+		
 	}
 
 
