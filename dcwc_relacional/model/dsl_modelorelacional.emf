@@ -1,0 +1,48 @@
+@namespace(	uri="http://dslrelacional",	prefix="dslrelacional")
+
+package dslrelacional;
+
+class ModelFactoryRelacional {
+	val DataProject [*] listProjects;
+}
+
+//Para ahorrar líneas de código
+abstract class ModelElemntWc {
+	attr String name;
+	attr String _id;
+	attr String typeElementOnModel;
+} 
+
+class DataProject extends ModelElemntWc {
+	attr String puerto;
+	attr String path;
+	val Schema [*] schema;
+}
+
+class Schema extends ModelElemntWc {
+	val Table [*] table;
+}
+
+class Table extends ModelElemntWc {
+	val Column [*] column;
+	val PrimaryKey primaryKey;
+	val ForeignKey [*] foreignKey;
+	ref Schema schema;	
+}
+
+class Column extends ModelElemntWc {
+	ref Table owner;
+	ref PrimaryKey [0..*] primaryKey;
+}
+
+class PrimaryKey extends ModelElemntWc {
+	ref Table owner;
+	ref Column [0..*] column;
+	ref ForeignKey [0..*] refersOpposite;
+}
+
+class ForeignKey extends ModelElemntWc {
+	ref Table owner;
+	ref PrimaryKey [1..1] refersTo;
+	ref Column [0..*] column;
+}

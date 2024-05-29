@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="mconcreta">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="FilledRhomb">
+      <template x="-1" y="1"/>
+      <template/>
+      <template x="-1" y="-1"/>
+      <template x="-2"/>
+      <template x="-1" y="1"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="ClosedArrow">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      <template/>
+      <template x="-2" y="2"/>
+      <template x="-2" y="-2"/>
+      <template/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolygonDecoration" name="Rhomb">
+      <backgroundColor xsi:type="gmfgraph:ConstantColor"/>
+      <template x="-1" y="1"/>
+      <template/>
+      <template x="-1" y="-1"/>
+      <template x="-2"/>
+      <template x="-1" y="1"/>
+    </figures>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="AssociationFigureSourceDecoration"/>
+    <descriptors name="PackageWcFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PackageWcFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="PackageWcLabelFigure" text="PackageWc"/>
+      </actualFigure>
+      <accessors accessor="getFigurePackageWcLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ClassWcFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ClassWcFigure" lineWidth="2">
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="224" blue="189"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="10" left="10" bottom="10" right="10"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ClassWcLabelFigure" text="ClassWc">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="ClassWcAttributesCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="ClassWcMethodsCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureClassWcLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getClassWcAttributesCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors accessor="getClassWcMethodsCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="AttributeWcFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AttributeWcFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="189" green="236" blue="182"/>
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="189" green="236" blue="182"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="AttributeWcLabelFigure" text="AttributeWc"/>
+      </actualFigure>
+      <accessors accessor="getFigureAttributeWcLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="MethodWcFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MethodWcFigure">
+        <foregroundColor xsi:type="gmfgraph:RGBColor" red="159" green="213" blue="209"/>
+        <backgroundColor xsi:type="gmfgraph:RGBColor" red="159" green="213" blue="209"/>
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="MethodWcLabelFigure" text="MethodWc"/>
+      </actualFigure>
+      <accessors accessor="getFigureMethodWcLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CompositionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CompositionFigure" lineWidth="2" sourceDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="GeneralizationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneralizationFigure" lineWidth="3" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="AggregationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AggregationFigure" lineWidth="2" sourceDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="AssociationFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AssociationFigure" lineWidth="2" sourceDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors name="RelationBinaryFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelationBinaryFigure" lineWidth="2"/>
+    </descriptors>
+    <descriptors name="AssociationroleALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationroleALabel" text="roleA"/>
+    </descriptors>
+    <descriptors name="AssociationmultALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationmultALabel" text="multA"/>
+    </descriptors>
+    <descriptors name="AssociationroleBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationroleBLabel" text="roleB"/>
+    </descriptors>
+    <descriptors name="AssociationmultBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AssociationmultBLabel" text="multB"/>
+    </descriptors>
+    <descriptors name="CompositionroleALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CompositionroleALabel" text="roleA"/>
+    </descriptors>
+    <descriptors name="CompositionmultALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CompositionmultALabel" text="multA"/>
+    </descriptors>
+    <descriptors name="CompositionroleBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CompositionroleBLabel" text="roleB"/>
+    </descriptors>
+    <descriptors name="CompositionmultBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CompositionmultBLabel" text="multB"/>
+    </descriptors>
+    <descriptors name="AggregationroleALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AggregationroleALabel" text="roleA"/>
+    </descriptors>
+    <descriptors name="AggregationmultALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AggregationmultALabel" text="multA"/>
+    </descriptors>
+    <descriptors name="AggregationroleBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AggregationroleBLabel" text="roleB"/>
+    </descriptors>
+    <descriptors name="AggregationmultBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="AggregationmultBLabel" text="multB"/>
+    </descriptors>
+    <descriptors name="RelationBinaryroleALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RelationBinaryroleALabel" text="roleA"/>
+    </descriptors>
+    <descriptors name="RelationBinarymultALabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RelationBinarymultALabel" text="multA"/>
+    </descriptors>
+    <descriptors name="RelationBinaryroleBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RelationBinaryroleBLabel" text="roleB"/>
+    </descriptors>
+    <descriptors name="RelationBinarymultBLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RelationBinarymultBLabel" text="multB"/>
+    </descriptors>
+  </figures>
+  <nodes name="PackageWc" figure="PackageWcFigure"/>
+  <nodes name="ClassWc" figure="ClassWcFigure"/>
+  <nodes name="AttributeWc" figure="AttributeWcFigure"/>
+  <nodes name="MethodWc" figure="MethodWcFigure"/>
+  <connections name="Composition" figure="CompositionFigure"/>
+  <connections name="Generalization" figure="GeneralizationFigure"/>
+  <connections name="Aggregation" figure="AggregationFigure"/>
+  <connections name="Association" figure="AssociationFigure"/>
+  <connections name="RelationBinary" figure="RelationBinaryFigure"/>
+  <compartments name="ClassWcAttributesCompartment" figure="ClassWcFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <compartments name="ClassWcMethodsCompartment" figure="ClassWcFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.2"/>
+  <labels name="PackageWcLabel" figure="PackageWcFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ClassWcLabel" figure="ClassWcFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="AttributeWcLabel" figure="AttributeWcFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="MethodWcLabel" figure="MethodWcFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="AssociationroleALabel" figure="AssociationroleALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="AssociationmultALabel" figure="AssociationmultALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="AssociationroleBLabel" figure="AssociationroleBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="AssociationmultBLabel" figure="AssociationmultBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+  <labels name="CompositionroleALabel" figure="CompositionroleALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="CompositionmultALabel" figure="CompositionmultALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="CompositionroleBLabel" figure="CompositionroleBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="CompositionmultBLabel" figure="CompositionmultBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+  <labels name="AggregationroleALabel" figure="AggregationroleALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="AggregationmultALabel" figure="AggregationmultALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="AggregationroleBLabel" figure="AggregationroleBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="AggregationmultBLabel" figure="AggregationmultBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+  <labels name="RelationBinaryroleALabel" figure="RelationBinaryroleALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" y="12"/>
+  </labels>
+  <labels name="RelationBinarymultALabel" figure="RelationBinarymultALabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet" alignment="END"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="-20" y="-12"/>
+  </labels>
+  <labels name="RelationBinaryroleBLabel" figure="RelationBinaryroleBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="3" y="12"/>
+  </labels>
+  <labels name="RelationBinarymultBLabel" figure="RelationBinarymultBLabelFigure" elementIcon="false">
+    <facets xsi:type="gmfgraph:AlignmentFacet"/>
+    <facets xsi:type="gmfgraph:LabelOffsetFacet" x="20" y="-12"/>
+  </labels>
+</gmfgraph:Canvas>

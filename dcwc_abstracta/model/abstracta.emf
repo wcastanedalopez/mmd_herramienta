@@ -1,0 +1,140 @@
+@namespace(	uri="http://abstracta",	prefix="abstracta")
+
+package abstracta;
+
+class ModelFactoryAbstractaWc {
+	val ProjectWc [*] projects;
+	val DataTypeFactoryWc typeFactoryWc;
+}
+
+//Para ahorrar líneas de código
+abstract class NamedElemntWc {
+	attr String name;
+	//attr String _id;
+	//attr String typeElementOnModel;
+}
+
+class ProjectWc extends NamedElemntWc {
+	attr String path;
+	val PackageWc [*] packages;
+	val DataTypeFactoryWc typeFactoryWc;
+}
+
+class PackageWc extends NamedElemntWc {
+	attr String path;
+	//val PackageElementWc [*] packageElement;
+	val ClassWc [*] listsClassWc;
+	val RelationWc [*] relationship;
+	val PackageWc [*] childrenPackagesWc;	
+}
+
+//Todo va a partir de acá, lo que implica que esta clase funge como un nodo raíz
+abstract class PackageElementWc extends NamedElemntWc {
+	attr String path;
+	ref PackageWc nameSpace;
+}
+
+//**************** Esta clase define los tipos de datos de mi modelo 
+abstract class ClassifierWc extends NamedElemntWc {
+
+}
+
+class DataTypeFactoryWc {
+	 val TypeWc [*] listTypesWc;
+}
+
+class TypeWc extends ClassifierWc {
+	//attr String type;
+}
+
+class ClassWc extends ClassifierWc {
+
+	attr String pathPackage;
+	attr boolean isAbstract;
+	val FeatureWc [*] features;
+	//ref ClassWc [*] superClass;
+	//ref ClassWc [*] subClass;
+	ref RelationWc [*] listRelationshipOut;
+}
+
+//******************************************************************
+
+abstract class RelationWc {
+	attr String type;
+	attr String multA;
+	attr String multB;
+	attr String roleA;
+	attr String roleB;
+	ref ClassWc source;
+	ref ClassWc target;
+}
+ 
+class Composition extends RelationWc {
+	
+}
+class Generalization extends RelationWc {
+	
+}
+
+class Aggregation extends RelationWc {
+	
+}
+
+class Association extends RelationWc {
+	
+}
+
+class RelationBinary extends RelationWc {
+	
+}
+
+//-Este bloque clase define las asociaciones según el modelo inicial 
+
+//class RelationWc extends PackageElementWc {
+//	val RelationEndWc [*] listRelationshipEnd;
+ //}
+
+//class RelationEndWc extends NamedElemntWc {
+//	attr String multiplicity;
+//	attr boolean isNavigable;
+//	val relationKind agregation;	
+//	ref ClassWc [1..1] classRef;
+	
+//} 
+
+//class relationKind {//Nombre formas relación en diagrama
+//	attr String kind;
+//	ref RelationEndWc owner; 
+//}
+//------------------------------------------------------------------
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SOBRE LOS ATRIBUTOS Y MÉTODOS
+abstract class FeatureWc extends NamedElemntWc {
+	attr boolean isStatic;
+	attr AccesModifyWc accesModify;
+	ref ClassWc [0..1] owner;
+}
+
+class AttributeWc extends FeatureWc {
+	ref ClassifierWc [0..1] typeClassifier;
+	attr String value;
+}
+
+class MethodWc extends FeatureWc {
+	attr String body;
+	ref ClassifierWc type; //ACÁ FUNCIONA PERO EN LA VALIDACIÓN DEL MODELO EN TD NO ME ACEPTABA ESA RELACIÓN, POR ESO NO VA
+	//attr String type;
+	attr boolean isQuery;
+	val AttributeWc [*] parameters;
+}
+
+enum AccesModifyWc{
+	PRIVATE;
+	PUBLIC;
+	PROTECTED;
+}
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+

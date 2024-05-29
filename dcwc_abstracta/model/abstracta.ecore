@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="abstracta" nsURI="http://abstracta" nsPrefix="abstracta">
+  <eClassifiers xsi:type="ecore:EClass" name="ModelFactoryAbstractaWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" upperBound="-1"
+        eType="#//ProjectWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeFactoryWc" eType="#//DataTypeFactoryWc"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElemntWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectWc" eSuperTypes="#//NamedElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="packages" upperBound="-1"
+        eType="#//PackageWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeFactoryWc" eType="#//DataTypeFactoryWc"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PackageWc" eSuperTypes="#//NamedElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listsClassWc" upperBound="-1"
+        eType="#//ClassWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relationship" upperBound="-1"
+        eType="#//RelationWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childrenPackagesWc" upperBound="-1"
+        eType="#//PackageWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PackageElementWc" abstract="true" eSuperTypes="#//NamedElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nameSpace" eType="#//PackageWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierWc" abstract="true" eSuperTypes="#//NamedElemntWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DataTypeFactoryWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listTypesWc" upperBound="-1"
+        eType="#//TypeWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeWc" eSuperTypes="#//ClassifierWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassWc" eSuperTypes="#//ClassifierWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAbstract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1"
+        eType="#//FeatureWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listRelationshipOut" upperBound="-1"
+        eType="#//RelationWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multB" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleB" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//ClassWc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//ClassWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Composition" eSuperTypes="#//RelationWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Generalization" eSuperTypes="#//RelationWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Aggregation" eSuperTypes="#//RelationWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Association" eSuperTypes="#//RelationWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationBinary" eSuperTypes="#//RelationWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureWc" abstract="true" eSuperTypes="#//NamedElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isStatic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accesModify" eType="#//AccesModifyWc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//ClassWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeWc" eSuperTypes="#//FeatureWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeClassifier" eType="#//ClassifierWc"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MethodWc" eSuperTypes="#//FeatureWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//ClassifierWc"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isQuery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//AttributeWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccesModifyWc">
+    <eLiterals name="PRIVATE"/>
+    <eLiterals name="PUBLIC" value="1"/>
+    <eLiterals name="PROTECTED" value="2"/>
+  </eClassifiers>
+</ecore:EPackage>

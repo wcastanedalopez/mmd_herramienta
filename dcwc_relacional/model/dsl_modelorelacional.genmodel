@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dcwc_relacional/src" modelPluginID="dcwc_relacional"
+    modelName="Dslrelacional" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>dsl_modelorelacional.emf</foreignModel>
+  <genPackages prefix="Dslrelacional" disposableProviderFactory="true" ecorePackage="dsl_modelorelacional.ecore#/">
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//ModelFactoryRelacional">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//ModelFactoryRelacional/listProjects"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="dsl_modelorelacional.ecore#//ModelElemntWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_modelorelacional.ecore#//ModelElemntWc/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_modelorelacional.ecore#//ModelElemntWc/_id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_modelorelacional.ecore#//ModelElemntWc/typeElementOnModel"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//DataProject">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_modelorelacional.ecore#//DataProject/puerto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dsl_modelorelacional.ecore#//DataProject/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//DataProject/schema"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//Schema">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Schema/table"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//Table">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Table/column"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Table/primaryKey"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Table/foreignKey"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Table/schema"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//Column">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Column/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//Column/primaryKey"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//PrimaryKey">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//PrimaryKey/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//PrimaryKey/column"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//PrimaryKey/refersOpposite"/>
+    </genClasses>
+    <genClasses ecoreClass="dsl_modelorelacional.ecore#//ForeignKey">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//ForeignKey/owner"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//ForeignKey/refersTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference dsl_modelorelacional.ecore#//ForeignKey/column"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

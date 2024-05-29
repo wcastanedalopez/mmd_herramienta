@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dcwc_abstracta/src" modelPluginID="dcwc_abstracta"
+    modelName="Abstracta" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>abstracta.emf</foreignModel>
+  <genPackages prefix="Abstracta" disposableProviderFactory="true" ecorePackage="abstracta.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="abstracta.ecore#//AccesModifyWc">
+      <genEnumLiterals ecoreEnumLiteral="abstracta.ecore#//AccesModifyWc/PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="abstracta.ecore#//AccesModifyWc/PUBLIC"/>
+      <genEnumLiterals ecoreEnumLiteral="abstracta.ecore#//AccesModifyWc/PROTECTED"/>
+    </genEnums>
+    <genClasses ecoreClass="abstracta.ecore#//ModelFactoryAbstractaWc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//ModelFactoryAbstractaWc/projects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//ModelFactoryAbstractaWc/typeFactoryWc"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstracta.ecore#//NamedElemntWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//NamedElemntWc/name"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//ProjectWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//ProjectWc/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//ProjectWc/packages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//ProjectWc/typeFactoryWc"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//PackageWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//PackageWc/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//PackageWc/listsClassWc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//PackageWc/relationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//PackageWc/childrenPackagesWc"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstracta.ecore#//PackageElementWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//PackageElementWc/path"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//PackageElementWc/nameSpace"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstracta.ecore#//ClassifierWc"/>
+    <genClasses ecoreClass="abstracta.ecore#//DataTypeFactoryWc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//DataTypeFactoryWc/listTypesWc"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//TypeWc"/>
+    <genClasses ecoreClass="abstracta.ecore#//ClassWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//ClassWc/pathPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//ClassWc/isAbstract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//ClassWc/features"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//ClassWc/listRelationshipOut"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="abstracta.ecore#//RelationWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//RelationWc/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//RelationWc/multA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//RelationWc/multB"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//RelationWc/roleA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//RelationWc/roleB"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//RelationWc/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//RelationWc/target"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//Composition"/>
+    <genClasses ecoreClass="abstracta.ecore#//Generalization"/>
+    <genClasses ecoreClass="abstracta.ecore#//Aggregation"/>
+    <genClasses ecoreClass="abstracta.ecore#//Association"/>
+    <genClasses ecoreClass="abstracta.ecore#//RelationBinary"/>
+    <genClasses image="false" ecoreClass="abstracta.ecore#//FeatureWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//FeatureWc/isStatic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//FeatureWc/accesModify"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//FeatureWc/owner"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//AttributeWc">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//AttributeWc/typeClassifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//AttributeWc/value"/>
+    </genClasses>
+    <genClasses ecoreClass="abstracta.ecore#//MethodWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//MethodWc/body"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference abstracta.ecore#//MethodWc/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute abstracta.ecore#//MethodWc/isQuery"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference abstracta.ecore#//MethodWc/parameters"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

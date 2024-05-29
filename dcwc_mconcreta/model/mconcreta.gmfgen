@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" copyrightText="">
+  <diagram visualID="1000" editPartClassName="ClassDiagramWcEditPart" itemSemanticEditPolicyClassName="ClassDiagramWcItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassDiagramWcCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ClassDiagramWcEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>mconcreta</containsShortcutsTo>
+    <shortcutsProvidedFor>mconcreta</shortcutsProvidedFor>
+    <domainDiagramElement href="mconcreta.genmodel#//mconcreta/ClassDiagramWc"/>
+    <childNodes visualID="3001" editPartClassName="AttributeWcEditPart" itemSemanticEditPolicyClassName="AttributeWcItemSemanticEditPolicy" canonicalEditPolicyClassName="AttributeWcCanonicalEditPolicy" graphicalNodeEditPolicyClassName="AttributeWcGraphicalNodeEditPolicy" createCommandClassName="AttributeWcCreateCommand" containers="//@diagram/@compartments.0">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AttributeWcEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AttributeWcFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttributeWcFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttributeWcLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttributeWcFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttributeWcLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttributeWcLabelFigure.setText(&quot;AttributeWc&quot;);&#xA;&#xA;this.add(fFigureAttributeWcLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttributeWcLabelFigure() {&#xA;&#x9;&#x9;return fFigureAttributeWcLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 189, 236, 182);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 189, 236, 182);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true" fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="mconcreta.genmodel#//mconcreta/AttributeWc"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassWc/attributes"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassWc/attributes"/>
+      </modelFacet>
+      <labels visualID="5001" editPartClassName="AttributeWcNameEditPart" itemSemanticEditPolicyClassName="AttributeWcNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureAttributeWcLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0" viewPattern="{0}  [ {1} ]" editorPattern="{0}  [ {1} ]" editPattern="{0}  [ {1} ]">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/AttributeWc/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <childNodes visualID="3002" editPartClassName="MethodWcEditPart" itemSemanticEditPolicyClassName="MethodWcItemSemanticEditPolicy" canonicalEditPolicyClassName="MethodWcCanonicalEditPolicy" graphicalNodeEditPolicyClassName="MethodWcGraphicalNodeEditPolicy" createCommandClassName="MethodWcCreateCommand" containers="//@diagram/@compartments.1">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MethodWcEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MethodWcFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MethodWcFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureMethodWcLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MethodWcFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureMethodWcLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureMethodWcLabelFigure.setText(&quot;MethodWc&quot;);&#xA;&#xA;this.add(fFigureMethodWcLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureMethodWcLabelFigure() {&#xA;&#x9;&#x9;return fFigureMethodWcLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 159, 213, 209);&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 159, 213, 209);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true" fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="mconcreta.genmodel#//mconcreta/MethodWc"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassWc/methods"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassWc/methods"/>
+      </modelFacet>
+      <labels visualID="5002" editPartClassName="MethodWcNameEditPart" itemSemanticEditPolicyClassName="MethodWcNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureMethodWcLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0" viewPattern="{0}  [ {1} ]" editorPattern="{0}  [ {1} ]" editPattern="{0}  [ {1} ]">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/MethodWc/name"/>
+        </modelFacet>
+      </labels>
+    </childNodes>
+    <topLevelNodes visualID="2001" editPartClassName="ClassWcEditPart" itemSemanticEditPolicyClassName="ClassWcItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassWcCanonicalEditPolicy" compartments="//@diagram/@compartments.0 //@diagram/@compartments.1" graphicalNodeEditPolicyClassName="ClassWcGraphicalNodeEditPolicy" createCommandClassName="ClassWcCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ClassWcEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ClassWcFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ClassWcFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClassWcLabelFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassWcAttributesCompartmentFigure; &#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RectangleFigure fClassWcMethodsCompartmentFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ClassWcFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setLineWidth(2);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureClassWcLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureClassWcLabelFigure.setText(&quot;ClassWc&quot;);&#xA;fFigureClassWcLabelFigure.setMaximumSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10000)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;&#xA;this.add(fFigureClassWcLabelFigure);&#xA;&#xA;&#xA;&#xA;fClassWcAttributesCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassWcAttributesCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassWcAttributesCompartmentFigure);&#xA;&#xA;&#xA;&#xA;fClassWcMethodsCompartmentFigure = new org.eclipse.draw2d.RectangleFigure();&#xA;&#xA;fClassWcMethodsCompartmentFigure.setOutline(false);&#xA;&#xA;this.add(fClassWcMethodsCompartmentFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClassWcLabelFigure() {&#xA;&#x9;&#x9;return fFigureClassWcLabelFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassWcAttributesCompartmentFigure() {&#xA;&#x9;&#x9;return fClassWcAttributesCompartmentFigure;&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.RectangleFigure getClassWcMethodsCompartmentFigure() {&#xA;&#x9;&#x9;return fClassWcMethodsCompartmentFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 224, 189);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedBackground="true"/>
+      </viewmap>
+      <behaviour xsi:type="gmfgen:OpenDiagramBehaviour"/>
+      <modelFacet>
+        <metaClass href="mconcreta.genmodel#//mconcreta/ClassWc"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/listClass"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/listClass"/>
+      </modelFacet>
+      <labels visualID="5003" editPartClassName="ClassWcNameEditPart" itemSemanticEditPolicyClassName="ClassWcNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigureClassWcLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/ClassifierWc/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2002" editPartClassName="PackageWcEditPart" itemSemanticEditPolicyClassName="PackageWcItemSemanticEditPolicy" canonicalEditPolicyClassName="PackageWcCanonicalEditPolicy" graphicalNodeEditPolicyClassName="PackageWcGraphicalNodeEditPolicy" createCommandClassName="PackageWcCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="PackageWcEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PackageWcFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PackageWcFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePackageWcLabelFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PackageWcFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setBorder(new org.eclipse.draw2d.MarginBorder(getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;, getMapMode().DPtoLP(5)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigurePackageWcLabelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePackageWcLabelFigure.setText(&quot;PackageWc&quot;);&#xA;&#xA;this.add(fFigurePackageWcLabelFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePackageWcLabelFigure() {&#xA;&#x9;&#x9;return fFigurePackageWcLabelFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet>
+        <metaClass href="mconcreta.genmodel#//mconcreta/PackageWc"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/packages"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/packages"/>
+      </modelFacet>
+      <labels visualID="5004" editPartClassName="PackageWcNameEditPart" itemSemanticEditPolicyClassName="PackageWcNameItemSemanticEditPolicy" elementIcon="true">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getFigurePackageWcLabelFigure" figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/PackageWc/name"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <links visualID="4001" editPartClassName="CompositionEditPart" itemSemanticEditPolicyClassName="CompositionItemSemanticEditPolicy" createCommandClassName="CompositionCreateCommand" reorientCommandClassName="CompositionReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="CompositionEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CompositionFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CompositionFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CompositionFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setSourceDecoration(createSourceDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createSourceDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(-1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="mconcreta.genmodel#//mconcreta/Composition"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <sourceMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/source"/>
+        <targetMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/target"/>
+      </modelFacet>
+      <labels visualID="6001" editPartClassName="CompositionRoleAEditPart" itemSemanticEditPolicyClassName="CompositionRoleAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CompositionroleALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CompositionroleALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CompositionroleALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6002" editPartClassName="CompositionMultAEditPart" itemSemanticEditPolicyClassName="CompositionMultAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CompositionmultALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CompositionmultALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CompositionmultALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6003" editPartClassName="CompositionRoleBEditPart" itemSemanticEditPolicyClassName="CompositionRoleBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CompositionroleBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CompositionroleBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CompositionroleBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleB"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6004" editPartClassName="CompositionMultBEditPart" itemSemanticEditPolicyClassName="CompositionMultBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CompositionmultBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CompositionmultBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CompositionmultBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multB"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <links visualID="4002" editPartClassName="GeneralizationEditPart" itemSemanticEditPolicyClassName="GeneralizationItemSemanticEditPolicy" createCommandClassName="GeneralizationCreateCommand" reorientCommandClassName="GeneralizationReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="GeneralizationEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="GeneralizationFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GeneralizationFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GeneralizationFigure() {&#xA;&#x9;&#x9;this.setLineWidth(3);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;&#x9;df.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(-2)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="mconcreta.genmodel#//mconcreta/Generalization"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <sourceMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/source"/>
+        <targetMetaFeature href="mconcreta.genmodel#//mconcreta/Generalization/parent"/>
+      </modelFacet>
+    </links>
+    <links visualID="4003" editPartClassName="AggregationEditPart" itemSemanticEditPolicyClassName="AggregationItemSemanticEditPolicy" createCommandClassName="AggregationCreateCommand" reorientCommandClassName="AggregationReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AggregationEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AggregationFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AggregationFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AggregationFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setSourceDecoration(createSourceDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createSourceDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolygonDecoration df = new org.eclipse.draw2d.PolygonDecoration();&#xA;df.setFill(true);&#xA;&#x9;df.setBackgroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;org.eclipse.draw2d.geometry.PointList pl = new org.eclipse.draw2d.geometry.PointList();&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(-1)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-2)&#xA;, getMapMode().DPtoLP(0)&#xA;);&#xA;pl.addPoint(getMapMode().DPtoLP(-1)&#xA;, getMapMode().DPtoLP(1)&#xA;);&#xA;df.setTemplate(pl);&#xA;df.setScale(getMapMode().DPtoLP(7)&#xA;, getMapMode().DPtoLP(3)&#xA;);&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="mconcreta.genmodel#//mconcreta/Aggregation"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <sourceMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/source"/>
+        <targetMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/target"/>
+      </modelFacet>
+      <labels visualID="6005" editPartClassName="AggregationRoleAEditPart" itemSemanticEditPolicyClassName="AggregationRoleAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AggregationroleALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AggregationroleALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AggregationroleALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6006" editPartClassName="AggregationMultAEditPart" itemSemanticEditPolicyClassName="AggregationMultAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AggregationmultALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AggregationmultALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AggregationmultALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6007" editPartClassName="AggregationRoleBEditPart" itemSemanticEditPolicyClassName="AggregationRoleBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AggregationroleBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AggregationroleBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AggregationroleBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleB"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6008" editPartClassName="AggregationMultBEditPart" itemSemanticEditPolicyClassName="AggregationMultBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AggregationmultBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AggregationmultBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AggregationmultBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multB"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <links visualID="4004" editPartClassName="AssociationEditPart" itemSemanticEditPolicyClassName="AssociationItemSemanticEditPolicy" createCommandClassName="AssociationCreateCommand" reorientCommandClassName="AssociationReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AssociationEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setSourceDecoration(createSourceDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createSourceDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="mconcreta.genmodel#//mconcreta/Association"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <sourceMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/source"/>
+        <targetMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/target"/>
+      </modelFacet>
+      <labels visualID="6009" editPartClassName="AssociationRoleAEditPart" itemSemanticEditPolicyClassName="AssociationRoleAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationroleALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationroleALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationroleALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6010" editPartClassName="AssociationMultAEditPart" itemSemanticEditPolicyClassName="AssociationMultAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationmultALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationmultALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationmultALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6011" editPartClassName="AssociationRoleBEditPart" itemSemanticEditPolicyClassName="AssociationRoleBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationroleBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationroleBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationroleBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleB"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6012" editPartClassName="AssociationMultBEditPart" itemSemanticEditPolicyClassName="AssociationMultBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AssociationmultBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AssociationmultBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AssociationmultBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multB"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <links visualID="4005" editPartClassName="RelationBinaryEditPart" itemSemanticEditPolicyClassName="RelationBinaryItemSemanticEditPolicy" createCommandClassName="RelationBinaryCreateCommand" reorientCommandClassName="RelationBinaryReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RelationBinaryEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RelationBinaryFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RelationBinaryFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RelationBinaryFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="mconcreta.genmodel#//mconcreta/RelationBinary"/>
+        <containmentMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <childMetaFeature href="mconcreta.genmodel#//mconcreta/ClassDiagramWc/relationship"/>
+        <sourceMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/source"/>
+        <targetMetaFeature href="mconcreta.genmodel#//mconcreta/RelationWc/target"/>
+      </modelFacet>
+      <labels visualID="6013" editPartClassName="RelationBinaryRoleAEditPart" itemSemanticEditPolicyClassName="RelationBinaryRoleAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RelationBinaryroleALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RelationBinaryroleALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RelationBinaryroleALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6014" editPartClassName="RelationBinaryMultAEditPart" itemSemanticEditPolicyClassName="RelationBinaryMultAItemSemanticEditPolicy" alignment="TARGET">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RelationBinarymultALabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RelationBinarymultALabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RelationBinarymultALabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multA&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="-20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multA"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6015" editPartClassName="RelationBinaryRoleBEditPart" itemSemanticEditPolicyClassName="RelationBinaryRoleBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RelationBinaryroleBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RelationBinaryroleBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RelationBinaryroleBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;roleB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="3" y="12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/roleB"/>
+        </modelFacet>
+      </labels>
+      <labels visualID="6016" editPartClassName="RelationBinaryMultBEditPart" itemSemanticEditPolicyClassName="RelationBinaryMultBItemSemanticEditPolicy" alignment="SOURCE">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RelationBinarymultBLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RelationBinarymultBLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RelationBinarymultBLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;multB&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" x="20" y="-12"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="mconcreta.genmodel#//mconcreta/RelationWc/multB"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <compartments visualID="7001" editPartClassName="ClassWcClassWcAttributesCompartmentEditPart" itemSemanticEditPolicyClassName="ClassWcClassWcAttributesCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassWcClassWcAttributesCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="ClassWcAttributesCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getClassWcAttributesCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <compartments visualID="7002" editPartClassName="ClassWcClassWcMethodsCompartmentEditPart" itemSemanticEditPolicyClassName="ClassWcClassWcMethodsCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="ClassWcClassWcMethodsCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.1" title="ClassWcMethodsCompartment" needsTitle="false" node="//@diagram/@topLevelNodes.0">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <viewmap xsi:type="gmfgen:ParentAssignedViewmap" getterName="getClassWcMethodsCompartmentFigure" figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+    </compartments>
+    <palette>
+      <groups title="Objects" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="AttributeWc" description="Create new AttributeWc" genNodes="//@diagram/@childNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="ClassWc" description="Create new ClassWc" genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="MethodWc" description="Create new MethodWc" genNodes="//@diagram/@childNodes.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="PackageWc" description="Create new PackageWc" genNodes="//@diagram/@topLevelNodes.1"/>
+      </groups>
+      <groups title="Connections" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Aggregation" description="Create new Aggregation" genLinks="//@diagram/@links.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Association" description="Create new Association" genLinks="//@diagram/@links.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Composition" description="Create new Composition" genLinks="//@diagram/@links.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Generalization" description="Create new Generalization" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="RelationBinary" description="Create new RelationBinary" genLinks="//@diagram/@links.4"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="dcwc_mconcreta.diagram.general" name="Mconcreta Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dcwc_mconcreta.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dcwc_mconcreta.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dcwc_mconcreta.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="dcwc_mconcreta.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.0"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@childNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.0" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.0" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.0" child="//@diagram/@topLevelNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.0" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.1" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@topLevelNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.2" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.2" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@topLevelNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.3" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.3" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@topLevelNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.4" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@topLevelNodes.0" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.4" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@topLevelNodes.0" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@topLevelNodes.0" child="//@diagram/@links.4" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="mconcreta.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@childNodes.0/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.0/@labels.1/@modelFacet //@diagram/@links.0/@labels.2/@modelFacet //@diagram/@links.0/@labels.3/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet //@diagram/@links.2/@labels.1/@modelFacet //@diagram/@links.2/@labels.2/@modelFacet //@diagram/@links.2/@labels.3/@modelFacet //@diagram/@links.3/@labels.0/@modelFacet //@diagram/@links.3/@labels.1/@modelFacet //@diagram/@links.3/@labels.2/@modelFacet //@diagram/@links.3/@labels.3/@modelFacet //@diagram/@links.4/@labels.0/@modelFacet //@diagram/@links.4/@labels.1/@modelFacet //@diagram/@links.4/@labels.2/@modelFacet //@diagram/@links.4/@labels.3/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

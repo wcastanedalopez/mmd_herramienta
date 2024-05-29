@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="mconcreta" nsURI="http://mconcreta" nsPrefix="mconcreta">
+  <eClassifiers xsi:type="ecore:EClass" name="ModelFactoryConcretaWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="projects" upperBound="-1"
+        eType="#//ProjectWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeFactoryWc" eType="#//DataTypeFactoryWc"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProjectWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classDiagrams" upperBound="-1"
+        eType="#//ClassDiagramWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassDiagramWc">
+    <eAnnotations source="gmf.diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listClass" upperBound="-1"
+        eType="#//ClassWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="relationship" upperBound="-1"
+        eType="#//RelationWc" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="packages" upperBound="-1"
+        eType="#//PackageWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PackageWc">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="rectangle" value="rounded"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="childrenPackagesWc" upperBound="-1"
+        eType="#//PackageWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassifierWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataTypeFactoryWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" upperBound="-1" eType="#//TypeWc"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeWc" eSuperTypes="#//ClassifierWc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassWc" eSuperTypes="#//ClassifierWc">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="rectangle" value="rounded"/>
+      <details key="color" value="255,224,189"/>
+      <details key="border.width" value="2"/>
+      <details key="margin" value="10"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathPackage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAbstract" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//AttributeWc" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="layout" value="list"/>
+        <details key="collapsible" value="true"/>
+        <details key="margin" value="5"/>
+        <details key="spacing" value="10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methods" upperBound="-1"
+        eType="#//MethodWc" containment="true">
+      <eAnnotations source="gmf.compartment">
+        <details key="layout" value="list"/>
+        <details key="collapsible" value="true"/>
+        <details key="margin" value="5"/>
+        <details key="spacing" value="10"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="multB" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="roleB" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="#//ClassWc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="#//ClassWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Composition" eSuperTypes="#//RelationWc">
+    <eAnnotations source="gmf.link">
+      <details key="source.decoration" value="filledrhomb"/>
+      <details key="source" value="source"/>
+      <details key="style" value="solid"/>
+      <details key="target" value="target"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Generalization" eSuperTypes="#//RelationWc">
+    <eAnnotations source="gmf.link">
+      <details key="source" value="source"/>
+      <details key="target" value="parent"/>
+      <details key="target.decoration" value="closedarrow"/>
+      <details key="style" value="solid"/>
+      <details key="width" value="3"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="child" eType="#//ClassWc"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parent" eType="#//ClassWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Aggregation" eSuperTypes="#//RelationWc">
+    <eAnnotations source="gmf.link">
+      <details key="source.decoration" value="rhomb"/>
+      <details key="source" value="source"/>
+      <details key="style" value="solid"/>
+      <details key="target" value="target"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Association" eSuperTypes="#//RelationWc">
+    <eAnnotations source="gmf.link">
+      <details key="source.decoration" value="arrow"/>
+      <details key="source" value="source"/>
+      <details key="style" value="solid"/>
+      <details key="target" value="target"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RelationBinary" eSuperTypes="#//RelationWc">
+    <eAnnotations source="gmf.link">
+      <details key="source.decoration" value="none"/>
+      <details key="source" value="source"/>
+      <details key="target" value="target"/>
+      <details key="width" value="2"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isStatic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="accesModify" eType="#//AccesModifyWc"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeWc" eSuperTypes="#//FeatureWc">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="border.color" value="189,236,182"/>
+      <details key="color" value="189,236,182"/>
+      <details key="border.width" value="1"/>
+      <details key="margin" value="5"/>
+      <details key="label.pattern" value="{0}  [ {1} ]"/>
+      <details key="layout" value="list"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeClassifier" eType="#//ClassifierWc"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MethodWc" eSuperTypes="#//FeatureWc">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="name"/>
+      <details key="border.color" value="159,213,209"/>
+      <details key="color" value="159,213,209"/>
+      <details key="border.width" value="1"/>
+      <details key="margin" value="5"/>
+      <details key="label.pattern" value="{0}  [ {1} ]"/>
+      <details key="layout" value="list"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//ClassifierWc"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isQuery" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//AttributeWc" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AccesModifyWc">
+    <eLiterals name="PRIVATE"/>
+    <eLiterals name="PUBLIC" value="1"/>
+    <eLiterals name="PROTECTED" value="2"/>
+  </eClassifiers>
+</ecore:EPackage>

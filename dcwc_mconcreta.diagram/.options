@@ -1,0 +1,7 @@
+# Tracing options for the dcwc_mconcreta.diagram plug-in
+
+# Common issues
+dcwc_mconcreta.diagram/debug=false
+
+# Visual IDs
+dcwc_mconcreta.diagram/debug/visualID=false

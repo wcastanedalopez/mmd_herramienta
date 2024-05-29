@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/dcwc_mconcreta/src" modelPluginID="dcwc_mconcreta"
+    modelName="Mconcreta" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>mconcreta.emf</foreignModel>
+  <genPackages prefix="Mconcreta" disposableProviderFactory="true" ecorePackage="mconcreta.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="mconcreta.ecore#//AccesModifyWc">
+      <genEnumLiterals ecoreEnumLiteral="mconcreta.ecore#//AccesModifyWc/PRIVATE"/>
+      <genEnumLiterals ecoreEnumLiteral="mconcreta.ecore#//AccesModifyWc/PUBLIC"/>
+      <genEnumLiterals ecoreEnumLiteral="mconcreta.ecore#//AccesModifyWc/PROTECTED"/>
+    </genEnums>
+    <genClasses ecoreClass="mconcreta.ecore#//ModelFactoryConcretaWc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ModelFactoryConcretaWc/projects"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ModelFactoryConcretaWc/typeFactoryWc"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//ProjectWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ProjectWc/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ProjectWc/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ProjectWc/classDiagrams"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//ClassDiagramWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ClassDiagramWc/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ClassDiagramWc/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ClassDiagramWc/listClass"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ClassDiagramWc/relationship"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ClassDiagramWc/packages"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//PackageWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//PackageWc/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//PackageWc/path"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//PackageWc/childrenPackagesWc"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mconcreta.ecore#//ClassifierWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ClassifierWc/name"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//DataTypeFactoryWc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//DataTypeFactoryWc/type"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//TypeWc"/>
+    <genClasses ecoreClass="mconcreta.ecore#//ClassWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ClassWc/pathPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//ClassWc/isAbstract"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ClassWc/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//ClassWc/methods"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="mconcreta.ecore#//RelationWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//RelationWc/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//RelationWc/multA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//RelationWc/multB"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//RelationWc/roleA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//RelationWc/roleB"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//RelationWc/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//RelationWc/target"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//Composition"/>
+    <genClasses ecoreClass="mconcreta.ecore#//Generalization">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//Generalization/child"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//Generalization/parent"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//Aggregation"/>
+    <genClasses ecoreClass="mconcreta.ecore#//Association"/>
+    <genClasses ecoreClass="mconcreta.ecore#//RelationBinary"/>
+    <genClasses image="false" ecoreClass="mconcreta.ecore#//FeatureWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//FeatureWc/isStatic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//FeatureWc/accesModify"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//AttributeWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//AttributeWc/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//AttributeWc/typeClassifier"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//AttributeWc/value"/>
+    </genClasses>
+    <genClasses ecoreClass="mconcreta.ecore#//MethodWc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//MethodWc/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//MethodWc/body"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mconcreta.ecore#//MethodWc/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mconcreta.ecore#//MethodWc/isQuery"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mconcreta.ecore#//MethodWc/parameters"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

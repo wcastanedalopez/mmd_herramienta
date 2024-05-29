@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dslrelacional" nsURI="http://dslrelacional" nsPrefix="dslrelacional">
+  <eClassifiers xsi:type="ecore:EClass" name="ModelFactoryRelacional">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listProjects" upperBound="-1"
+        eType="#//DataProject" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModelElemntWc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="_id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeElementOnModel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataProject" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="puerto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schema" upperBound="-1"
+        eType="#//Schema" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Schema" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="table" upperBound="-1"
+        eType="#//Table" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" upperBound="-1"
+        eType="#//Column" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" eType="#//PrimaryKey"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="foreignKey" upperBound="-1"
+        eType="#//ForeignKey" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="schema" eType="#//Schema"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Column" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Table"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="primaryKey" upperBound="-1"
+        eType="#//PrimaryKey"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimaryKey" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Table"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" upperBound="-1"
+        eType="#//Column"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refersOpposite" upperBound="-1"
+        eType="#//ForeignKey"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ForeignKey" eSuperTypes="#//ModelElemntWc">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Table"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="refersTo" lowerBound="1"
+        eType="#//PrimaryKey"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" upperBound="-1"
+        eType="#//Column"/>
+  </eClassifiers>
+</ecore:EPackage>

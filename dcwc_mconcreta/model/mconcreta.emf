@@ -1,0 +1,133 @@
+@namespace(	uri="http://mconcreta",	prefix="mconcreta")
+
+package mconcreta;
+
+class ModelFactoryConcretaWc {
+	val ProjectWc [*] projects;
+	val DataTypeFactoryWc typeFactoryWc;
+}
+
+
+
+class ProjectWc  {
+	attr String name;
+	attr String path;
+	val ClassDiagramWc [*] classDiagrams;
+}
+
+@gmf.diagram
+class ClassDiagramWc {
+	attr String name;
+	attr String path;
+	val ClassWc [*] listClass;
+	val RelationWc [*] relationship;
+	val PackageWc [*] packages;	
+}
+@gmf.node(label = "name",rectangle="rounded")
+class PackageWc {
+   attr  String name;
+   attr  String path;
+   //val ClassWc [*] listsClassWc;
+   val PackageWc [*] childrenPackagesWc;
+}
+
+
+//**************** Esta clase define los tipos de datos de mi modelo 
+
+abstract class ClassifierWc  {
+	attr String name;
+}
+
+class DataTypeFactoryWc {
+	 //val TypesWc [*] listTypesWc;
+	 val TypeWc [*] type;
+}
+
+
+class TypeWc extends ClassifierWc {
+	//attr String type;
+}
+
+@gmf.node(label = "name", rectangle="rounded", color="255,224,189", border.width = "2", margin = "10")
+class ClassWc extends ClassifierWc {
+	
+	attr String pathPackage;
+	attr boolean isAbstract;
+	
+	@gmf.compartment(layout="list", collapsible="true", margin = "5", spacing = "10")
+	val AttributeWc [*] attributes;
+	
+	@gmf.compartment(layout="list", collapsible="true", margin = "5", spacing = "10")
+	val MethodWc [*] methods;
+	//ref ClassWc [*] superClass;
+	//ref ClassWc [*] subClass;
+	//ref RelationWc [*] listRelationship;
+}
+
+//******************************************************************
+
+//---------------------------------------SE DEFINEN LAS ASOCIACIONES 
+abstract class RelationWc  {
+	attr String type;
+	attr String multA;
+	attr String multB;
+	attr String roleA;
+	attr String roleB;
+	ref ClassWc source;
+	ref ClassWc target;
+}
+@gmf.link(source.decoration="filledrhomb", source="source", style="solid", target="target",  width="2")
+class Composition extends RelationWc {
+	
+}
+
+@gmf.link(source="source", target="parent",target.decoration="closedarrow", style="solid", width="3")
+class Generalization extends RelationWc {
+	ref ClassWc child; 
+	ref ClassWc parent;
+	
+}
+@gmf.link(source.decoration="rhomb", source="source", style="solid", target="target",  width="2")
+class Aggregation extends RelationWc {
+	
+}
+@gmf.link(source.decoration="arrow", source="source", style="solid", target="target", width="2")
+class Association extends RelationWc {
+	
+}
+@gmf.link(source.decoration="none", source="source", target="target", width="2")
+class RelationBinary extends RelationWc {
+	
+}
+//------------------------------------------------------------------
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> SOBRE LOS ATRIBUTOS Y MÉTODOS
+abstract class FeatureWc {
+	attr boolean isStatic;
+	attr AccesModifyWc accesModify;
+	//ref ClassWc [0..1] owner;
+}
+@gmf.node(label = "name", border.color = "189,236,182", color="189,236,182", border.width = "1", margin = "5", label.pattern="{0}  [ {1} ]", layout = "list")
+class AttributeWc extends FeatureWc {
+	attr String name;
+	ref ClassifierWc [0..1] typeClassifier;
+	attr String value;
+}
+@gmf.node(label = "name",  border.color = "159,213,209", color="159,213,209", border.width = "1", margin = "5", label.pattern="{0}  [ {1} ]", layout = "list")
+class MethodWc extends FeatureWc {
+	attr String name;
+	attr String body;
+	ref ClassifierWc type; //ACÁ FUNCIONA PERO EN LA VALIDACIÓN DEL MODELO EN TD NO ME ACEPTABA ESA RELACIÓN, POR ESO NO VA
+	//attr String type;
+	attr boolean isQuery;
+	val AttributeWc [*] parameters;
+}
+
+enum AccesModifyWc{
+	PRIVATE;
+	PUBLIC;
+	PROTECTED;
+}
+
